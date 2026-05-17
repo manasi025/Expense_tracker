@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Expense Tracker Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+
+    <h1>Expense Tracker Dashboard</h1>
+
+
+    <!-- ADD EXPENSE FORM -->
+
+    <div>
+
+        <input 
+            type="text" 
+            id="category" 
+            placeholder="Enter Category"
+        >
+
+        <input 
+            type="number" 
+            id="amount" 
+            placeholder="Enter Amount"
+        >
+
+        <input 
+            type="text" 
+            id="comments" 
+            placeholder="Enter Comments"
+        >
+
+        <button onclick="addExpense()">
+            Add Expense
+        </button>
+
+    </div>
+
+
+    <br>
+
+
+    <!-- EXPENSE TABLE -->
+
+    <table>
+
+        <thead>
+
+            <tr>
+
+                <th>Category</th>
+
+                <th>Amount</th>
+
+                <th>Comments</th>
+
+                <th>Created At</th>
+
+                <th>Actions</th>
+
+            </tr>
+
+        </thead>
+
+        <tbody id="expenseTable">
+
+        </tbody>
+
+    </table>
+
+
+    <br><br>
+
+
+    <!-- PIE CHART -->
+
+    <div style="width: 400px;">
+
+        <canvas id="myChart"></canvas>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
